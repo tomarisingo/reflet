@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../fonts/NotoSansJP-Regular.woff2') format('woff2'); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: bold;
+    font-weight: 700;
+    src: local(''), url('./../fonts/noto-sans-jp-v42-japanese-700.woff2') format('woff2'); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif JP';
+    font-style: medium;
+    font-weight: 500;
+    src: local(''), url('./../fonts/noto-sans-jp-v42-japanese-500.woff2') format('woff2'); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif JP';
+    font-style: semi-bold;
+    font-weight: 600;
+    src: local(''), url('./../fonts/noto-sans-jp-v42-japanese-600.woff2') format('woff2'); 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Serif JP';
+    font-style: bold;
+    font-weight: 700;
+    src: local(''), url('./../fonts/noto-sans-jp-v42-japanese-700.woff2') format('woff2'); 
+    font-display: swap;
+}
+
+$skin: #E3DAC2;
+$gray: #989382;
+$text: #595757;
+
+@mixin n-serif {
+	font-family: 'Noto Serif JP', sans-serif;
+	font-weight: 400;
+}
+
+@mixin n-sans {
+    font-family: 'Noto Sans JP', serif;
+    font-weight: 500;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    @include n-serif;
+    color: $text;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.container-p10 {
+    max-width: 575px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-p20 {
+    max-width: 575px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-p34 {
+    max-width: 575px;
+    padding-left: 34px;
+    padding-right: 34px;
+    margin-left: auto;
+    margin-right: auto;
+}
